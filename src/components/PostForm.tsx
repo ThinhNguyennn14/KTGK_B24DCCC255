@@ -27,7 +27,7 @@ export default function PostForm({ baiViet, setBaiViet }: PostFormProps) {
       setNoiDung(bai.noiDung);
       setTheLoai(bai.theLoai);
     }
-  }, [id]);
+  }, id, bai]);
 
   const handleSubmit = () => {
     if (tieuDe.trim().length < 10) return alert("Tiêu đề phải ít nhất 10 ký tự");
